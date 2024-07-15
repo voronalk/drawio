@@ -104,6 +104,7 @@ var StorageDialog = function(editorUi, fn, rowLimit)
 		{
 			mxEvent.addListener(button, 'click', (clientFn != null) ? clientFn : function()
 			{
+				console.log("123")
 				if (mode == App.MODE_GOOGLE && editorUi.spinner.spin(document.body, mxResources.get('authorizing')))
 				{
 					// Tries immediate authentication
@@ -13803,7 +13804,7 @@ var ConnectionPointsDialog = function(editorUi, cell)
 			cPoint.vertex = true;
 			cPoint.cp = true;
 			cPoint.constObj = constObj;
-
+			console.log(cPoint)
 			return editingGraph.addCell(cPoint);
 		};
 	
@@ -14074,16 +14075,16 @@ var ConnectionPointsDialog = function(editorUi, cell)
 
 		function applyPointProp()
 		{
-			var x = parseInt(xInput.value) || 0;
+			var x = Number(xInput.value) || 0;
 			x = x < 0? 0 : (x > 100? 100 : x);
 			xInput.value = x;
 
-			var y = parseInt(yInput.value) || 0;
+			var y = Number(yInput.value) || 0;
 			y = y < 0? 0 : (y > 100? 100 : y);
 			yInput.value = y;
 
-			var dx = parseInt(dxInput.value) || 0;
-			var dy = parseInt(dyInput.value) || 0;
+			var dx = Number(dxInput.value) || 0;
+			var dy = Number(dyInput.value) || 0;
 			var constObj = new mxConnectionConstraint(new mxPoint(x/100, y/100), false, null, dx, dy);
 			var cp = editingGraph.getConnectionPoint(state, constObj);
 

@@ -6,7 +6,7 @@
 	<taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask" classpath="${jscompiler}" />
 
 	<target name="merge">
-    	<concat destfile="${basedir}/../../build/shapes.js" fixlastline="yes" append="no">
+    	<concat destfile="${basedir}/../../build/shapes.js" fixlastline="yes" append="no" encoding="UTF-8">
     		<fileset dir="${war.dir}/shapes" includes="**/*.js"/>
     		<fileset dir="${war.dir}/stencils" includes="**/*.js"/>
     	</concat>
@@ -16,7 +16,7 @@
 			<arg value="../../src/main/webapp/js/stencils.min.js"/>
 		</java>
 		
-		<jscomp compilationLevel="simple" debug="false" forceRecompile="true" output="${war.dir}/js/shapes-14-6-5.min.js">
+		<jscomp compilationLevel="simple" debug="true" forceRecompile="true" output="${war.dir}/js/shapes-14-6-5.min.js">
 			<sources dir="${basedir}/../../build">
 				<file name="shapes.js" />
 			</sources>

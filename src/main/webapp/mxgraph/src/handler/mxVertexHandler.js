@@ -529,7 +529,6 @@ mxVertexHandler.prototype.getHandleForEvent = function(me)
 			this.allowHandleBoundsCheck) ? shape.strokewidth + shape.svgStrokeTolerance : null;
 		var real = (st != null) ? new mxRectangle(me.getGraphX() - Math.floor(st / 2),
 			me.getGraphY() - Math.floor(st / 2), st, st) : hit;
-
 		return shape != null && (me.isSource(shape) || shape.intersectsRectangle(real));
 	});
 	
