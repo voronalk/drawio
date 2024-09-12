@@ -1,0 +1,68 @@
+{
+  "language": "",
+  "configVersion": null,
+  "customFonts": [],
+  "libraries": [
+    "general;basic;arrows2;flowchart;er;uml;fluid_power;company-graphics",
+    {
+      "title": {
+        "main": "Company"
+      },
+      "entries": [
+        {
+          "id": "company-graphics",
+          "title": {
+            "main": "Graphics",
+            "de": "Grafiken"
+          },
+          "desc": {
+            "main": "Collection of Graphics for Company",
+            "de": "Sammlung von Grafiken für Firma"
+          },
+          "libs": [
+            {
+              "title": {
+                "main": "Graphics for Company",
+                "de": "Grafiken für Firma"
+              },
+              "data": [
+                {
+                  "xml": "jZLBbsMgDIafhmuUgKr1mqZbL5u0VyCJF5BMHIHbpG9fEti6Tqq0A5L5/NuYH4Rq3HLyejIf1AMK9SpU44k4RW5pAFHI0vZCHYWUZVxCvj3JVlu2nLSHkf9TIFPBReMZEkkg8BUz6HUwsMpLoQ50ZrQjNDSO0HGGhl0c/FjFUKMdxhh38XzwEaBuAT8pWLb0kLiAZ9tpfP8jaImZ3C9BnVsyTZEGo6d1MLcMq2nFDC3SQKHovZ4tySj5sogNIfltflXVu0Ot8j1jT1ieerWhbNQJyAH7a5TMtmeTFDtZZIcM2MHkupey2CeqQyLDT/Xd/Bhk/7+393fecg/f4AY=",
+                  "w": 52.2,
+                  "h": 70.8,
+                  "aspect": "fixed"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "customLibraries": [],
+  "plugins": [],
+  "recentColors": [],
+  "formatWidth": "240",
+  "createTarget": false,
+  "pageFormat": {
+    "x": 0,
+    "y": 0,
+    "width": 827,
+    "height": 1169
+  },
+  "search": true,
+  "fontColor": "#5C5C5C",
+  "strokeColor": "#006658",
+  "fillColor": "#21C0A5",
+  "defaultGridSize": 1,
+  "showStartScreen": true,
+  "gridColor": "#d0d0d0",
+  "darkGridColor": "#424242",
+  "autosave": true,
+  "resizeImages": null,
+  "openCounter": 9,
+  "version": 18,
+  "unit": 1,
+  "isRulerOn": false,
+  "ui": ""
+}

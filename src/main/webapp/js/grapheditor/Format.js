@@ -5969,7 +5969,7 @@ StyleFormatPanel.prototype.addLineJumps = function(container)
 		styleSelect.style.borderWidth = '1px';
 		styleSelect.style.borderStyle = 'solid';
 
-		var styles = ['none', 'arc', 'gap', 'sharp', 'line'];
+		var styles = ['none', 'arc', 'gap', 'sharp', 'line', 'dot'];
 
 		for (var i = 0; i < styles.length; i++)
 		{
