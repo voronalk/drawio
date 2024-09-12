@@ -9118,13 +9118,13 @@ TableLayout.prototype.execute = function (parent) {
                 );
               } else if (style == "dot") {
                 f *= 1.3;
-				ento.lineTo(p0Dot.x, p0Dot.y);
+                ento.lineTo(p0Dot.x, p0Dot.y);
                 ento.arcTo(1, 1, 0, 0, 0, p1Dot.x, p1Dot.y);
                 ento.arcTo(1, 1, 0, 0, 0, p0Dot.x, p0Dot.y);
                 ento.arcTo(2.5, 2.5, 0, 0, 0, p1Dot.x, p1Dot.y);
                 ento.arcTo(2.5, 2.5, 0, 0, 0, p0Dot.x, p0Dot.y);
-				ento.moveTo(p1Dot.x, p1Dot.y)
-				ento.lineTo(p1.x, p1.y)
+                ento.moveTo(p1Dot.x, p1Dot.y);
+                ento.lineTo(p1.x, p1.y);
               } else {
                 ento.moveTo(p1.x, p1.y);
                 moveTo = true;
